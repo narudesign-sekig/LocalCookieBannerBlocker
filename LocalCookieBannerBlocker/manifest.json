@@ -1,0 +1,11 @@
+{
+    "name": "LocalCookieBannerBlocker",
+    "description": "ローカルのファイルをブラウザする際にCookie許可を確認するバナーを非表示にします。",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    
+    "content_scripts": [{
+        "matches": ["file:///*"],
+        "css": ["style.css"]
+    }]
+}
